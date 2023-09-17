@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="?attr/colorAccent"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/taskitemback"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tasktitle"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingLeft="10dp"
+            android:textSize="21sp"
+            android:fontFamily="@font/alata"
+            android:textColor="?attr/colorPrimary"
+            android:text="title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/alata"
+            android:textColor="?attr/colorPrimary"
+            android:id="@+id/randomtext"
+            android:text="Today at"
+            android:gravity="left"
+            android:layout_below="@id/tasktitle"/>
+
+        <TextView
+            android:id="@+id/tasktime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tasktitle"
+            android:layout_toRightOf="@id/randomtext"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/alata"
+            android:text="12:05"
+            android:textColor="#8687e7" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:id="@+id/prioritydisplay"
+            android:drawableStart="@drawable/always_white_flag"
+            android:padding="5dp"
+            android:background="@drawable/priorityflagbg"
+            android:text="1"
+            android:textColor="#fff"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"/>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

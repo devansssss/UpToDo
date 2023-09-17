@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorAccent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Index"
+                android:textColor="#8875fe"
+                android:fontFamily="@font/alata"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="70dp"
+                android:textSize="30sp"
+                android:letterSpacing=".05"/>
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="80dp"
+                android:background="?attr/colorAccent"
+                android:backgroundTint="?attr/colorAccent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:transitionName="shared_element_container"
+                android:id="@+id/presentdaytasksrv"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/checklist_rafiki_1"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginTop="50dp"
+                android:id="@+id/Notaskimage"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alata"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="What do you want to do today?"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/notasktext"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alata"
+                android:textSize="17sp"
+                android:layout_gravity="center_horizontal"
+                android:text="Tap + to add your tasks"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:id="@+id/addtaskstext"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:id="@+id/Todaytasks"
+                android:fontFamily="@font/alata"
+                android:layout_height="wrap_content"
+                android:background="@drawable/taskstatus"
+                android:text="Today"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="20dp"/>
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="#8875ef"
+            android:id="@+id/addtaskbtn"
+            android:src="@drawable/add"
+            android:tint="@color/white"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</FrameLayout>

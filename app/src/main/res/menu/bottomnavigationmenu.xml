@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/index"
+    android:enabled="true"
+    android:icon="@drawable/home_2"
+    android:title="Index"/>
+    <item android:id="@+id/calendar"
+        android:title="Calendar"
+        android:enabled="true"
+        android:icon="@drawable/calendarr"/>
+    <item
+        android:title=""
+        android:id="@+id/hehe"
+        android:enabled="false"/>
+    <item android:id="@+id/focus"
+        android:enabled="true"
+        android:icon="@drawable/clock"
+        android:title="Focus"/>
+    <item android:id="@+id/profile"
+        android:enabled="true"
+        android:icon="@drawable/user"
+        android:title="Profile"/>
+</menu>

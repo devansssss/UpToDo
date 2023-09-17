@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorAccent"
+    android:backgroundTint="?attr/colorAccent"
+    tools:context=".FocusFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorAccent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Focus Mode"
+                android:textColor="#8875ff"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/alata"
+                android:textSize="30sp"
+                android:layout_marginTop="70dp"
+                android:letterSpacing=".08"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:max="1800000"
+                    android:indeterminate="false"
+                    android:rotation="-90"
+                    android:background="@drawable/circular_progressbar_gray"
+                    android:progressDrawable="@drawable/circular_progress"
+                    android:progress="1800000"/>
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/tvtimer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/alata"
+                        android:textSize="30sp"
+                        android:text="30:00"
+                        android:textColor="?attr/colorPrimary"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/startButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alata"
+                android:background="?attr/colorPrimary"
+                android:layout_gravity="center"
+                android:text="Start Focusing"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorAccent"
+    tools:context=".TaskDetail">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Task Details"
+            android:fontFamily="@font/alata"
+            android:layout_marginTop="20dp"
+            android:letterSpacing=".08"
+            android:textSize="30sp"
+            android:textColor="#FF8687E7"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskdetailtasktitle"
+            android:textSize="25sp"
+            android:textColor="?attr/colorPrimary"
+            android:fontFamily="@font/alata"
+            android:transitionName="shared_element_container"
+            android:text="Title"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskdetailtaskdescription"
+            android:textSize="17sp"
+            android:text="Description"
+            android:textColor="#777777"
+            android:fontFamily="@font/alata"
+            android:layout_marginTop="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/timer"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time: "
+                android:fontFamily="@font/alata"
+                android:layout_weight="3"
+                android:letterSpacing=".08"
+                android:textSize="18sp"
+                android:textColor="?attr/colorPrimary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/prioritybg"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="20sp"
+                android:text="12:12"
+                android:id="@+id/taskdetailtasktime"
+                android:textColor="#fff"
+                android:fontFamily="@font/alata"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/calendarr"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date:  "
+                android:fontFamily="@font/alata"
+                android:layout_weight="3"
+                android:letterSpacing=".08"
+                android:textSize="18sp"
+                android:textColor="?attr/colorPrimary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/prioritybg"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="20sp"
+                android:text="12/12"
+                android:id="@+id/taskdetailtaskdate"
+                android:textColor="#fff"
+                android:fontFamily="@font/alata"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/flag"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task Priority:"
+                android:fontFamily="@font/alata"
+                android:layout_weight="3"
+                android:letterSpacing=".08"
+                android:textSize="18sp"
+                android:textColor="?attr/colorPrimary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/prioritybg"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="20sp"
+                android:text="2"
+                android:id="@+id/taskdetailtaskprio"
+                android:textColor="#fff"
+                android:fontFamily="@font/alata"/>
+        </LinearLayout>
+
+
+
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete Task"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/trash"
+                android:textSize="20sp"
+                android:layout_gravity="left"
+                android:fontFamily="@font/alata"
+                android:drawablePadding="10dp"
+                android:textColor="#ff4949"
+                android:layout_marginTop="50dp"
+                android:padding="10dp"
+                android:id="@+id/deletetask"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorAccent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textColor="#8875ff"
+                    android:letterSpacing=".08"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/alata"
+                    android:layout_marginTop="70dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="name"
+                    android:textColor="?attr/colorPrimary"
+                    android:fontFamily="@font/alata"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_horizontal"
+                    android:textAllCaps="true"
+                    android:id="@+id/profilename"
+                    android:layout_marginTop="30dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="10 tasks left"
+                    android:id="@+id/numberoftasksleft"
+                    android:background="@drawable/secondpage"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account"
+                    android:textColor="#616060"
+                    android:fontFamily="@font/alata"
+                    android:textSize="15sp"
+                    android:layout_marginTop="30dp"/>
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="textStart"
+                    app:icon="@drawable/person"
+                    android:id="@+id/changenamebtn"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorPrimary"
+                    android:background="@android:color/transparent"
+                    style="@style/Theme.Material3.Dark"
+                    android:fontFamily="@font/alata"
+                    app:iconTint="#fff"
+                    android:text="Change Name"
+                    android:textSize="15sp"/>
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="textStart"
+                    app:icon="@drawable/key"
+                    android:id="@+id/changepasswordbtn"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorPrimary"
+                    app:iconTint="#fff"
+                    android:background="@android:color/transparent"
+                    style="@style/Theme.Material3.Dark"
+                    android:fontFamily="@font/alata"
+                    android:text="Change Password"
+                    android:textSize="15sp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="5dp"
+                    app:icon="@drawable/baseline_logout_24"
+                    app:iconTint="#F65757"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/logoutbtn"
+                    style="@style/Theme.Material3.Dark"
+                    android:textColor="#F65757"
+                    android:fontFamily="@font/alata"
+                    android:text="Log Out"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
